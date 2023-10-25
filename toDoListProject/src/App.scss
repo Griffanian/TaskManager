@@ -1,0 +1,178 @@
+$primary-color: #d6d4d4 ;
+$secondary-color: #9d9d9d;
+$accent: #00ADB5;
+$text-primary-color: white;
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color;
+  height: 100vw;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+  background-color: $accent;
+  height: 70px;
+  width: 100%;
+  color: $text-primary-color;
+}
+header div{
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a{
+  color: $text-primary-color;
+  text-decoration: none;
+}
+header a:hover{
+  text-shadow: 4px 4px black ;
+}
+.userHandler{
+  width: fit-content;
+}
+.userHandler a{
+  margin: 20px;
+}
+.userDash{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border: solid 1 px $primary-color;
+  border-radius: 10px;
+}
+.mainBody{
+  background-color: white;
+  height: 100%;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.taskInputBox{
+  background-color: $accent;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  border-radius: 7px;
+  display: flex;
+  box-sizing: border-box;
+}
+.taskInputBox input{
+  background-color: $accent;
+  width: 89%;
+  font-size: 30px;
+  border: none;
+  border-radius: 7px;
+  }
+.taskInputBox input:focus-visible{
+  outline-width: 0;
+  border-bottom: solid 1px black;
+}
+.taskInputBox button{
+  width: 50px;
+  aspect-ratio: 1/1;;
+  border-radius: 50%;
+  border: none;
+  font-size: 40px;
+  margin-left: 5px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border: solid 1px black;
+}
+.taskInputBox button:hover{
+  box-shadow: 0px 0px 1px 1px $primary-color;
+}
+.currentTasks{
+  list-style: none;
+  width: 100%;
+}
+.currentTasks div {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 30px;
+  background-color: $accent;
+  border-radius: 7px;
+}
+.currentTasks div:hover{
+  text-decoration: line-through;
+}
+
+.userInfoContainer{
+  background-color: $accent;
+  border: solid 1px $primary-color;
+  border-radius: 10px;
+  width: 500px;
+  /* padding: 10px; */
+}
+.userInfoHeader{
+  padding: 8px;
+  border-radius: 9px 9px 0 0;
+  background-color: $primary-color;
+  color: black;
+  padding: 0 20px;
+}
+
+.userInfoContainer h1,p{
+  margin: 0;
+}
+.userInfoForm{
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px;
+}
+.userInfoForm input{
+  font-size: 20px;
+}
+.userInfoForm input[type="text"],input[type="password"]{
+  width: 450px;
+  margin: 5px 0;
+  background-color: $accent;
+  border: solid 1px $primary-color;
+  border-radius: 2px;
+}
+.userInfoForm p,label{
+  margin: 5px 0;
+}
+.userInfoResult{
+  color: $primary-color;
+  
+}
+.userInfoForm input[type="submit"]{
+  width: 100%;
+  background-color: $primary-color;
+  color: black;
+  border-radius: 10px;
+  margin: 8px 0;
+}
+.message p{
+  padding-left: 40px;
+}
+.valid {
+  color: black;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+.invalid {
+  color: black;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
